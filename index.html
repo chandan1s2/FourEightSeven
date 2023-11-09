@@ -1,10 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Graza Olive Oil</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* CSS reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #fff;
+    }
+
+    .product-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .product-images {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .carousel {
+      position: relative;
+      width: 100%;
+    }
+
+    .carousel-item {
+      width: 100%;
+      height: 200px;
+      background-image: url('image1.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .carousel .carousel-control-prev,
+    .carousel .carousel-control-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      cursor: pointer;
+    }
+
+    .carousel .carousel-control-prev:hover,
+    .carousel .carousel-control-next:hover {
+      background-color: #eee;
+    }
+
+    .product-info {
+      flex: 2;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .product-details {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .product-quantity {
+      flex: 1;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    select {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .product-buttons {
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #eee;
+    }
+
+    .accordion {
+      width: 100%;
+    }
+
+    .accordion-item {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    .accordion-title {
+      padding: 10px;
+      background-color: #f2f2f2;
+      cursor: pointer;
+    }
+
+    .accordion-title:hover {
+      background-color: #eee;
+    }
+
+    .accordion-content {
+      padding: 10px;
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <div class="product-container">
@@ -19,31 +150,4 @@
         <div class="carousel-item">
           <img src="image3.jpg" alt="Graza Olive Oil">
         </div>
-      </div>
-    </div>
-
-    <div class="product-info">
-      <h2>Sizzle & Drizzle Combo Pack</h2>
-      <p>Enjoy the best of both worlds with Graza's “Drizzle & Sizzle” combo pack of extra-virgin olive oils.</p>
-
-      <div class="product-details">
-        <div class="product-quantity">
-          <label for="quantity">Quantity:</label>
-          <select id="quantity">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-        </div>
-
-        <div class="product-buttons">
-          <button class="btn btn-primary">Add to Cart</button>
-          <button class="btn btn-outline-primary">Save for Later</button>
-        </div>
-      </div>
-
-      <div class="accordion">
-        <div class="accordion-item">
-          <h3 class="accordion-title">Description</h3>
-          <div class="accordion-content">
-            <p>Graza's “Drizzle & Sizzle” combo pack is the perfect way to elevate your cooking and your taste buds. This duo includes our two most popular extra-virgin olive oils: “Drizzle” for finishing
+        <a class="carousel-
