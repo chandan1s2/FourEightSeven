@@ -1,95 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Graza Olive Oil</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sizzle Drizzle Combo Pack</title>
+  <style>
+    .container {
+      padding: 20px;
+    }
+
+    .carousel {
+      /* Styles for the carousel */
+    }
+
+    .text-3xl {
+      font-size: 1.875rem;
+    }
+
+    .font-bold {
+      font-weight: bold;
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .border {
+      border: 1px solid;
+    }
+
+    .border-gray-300 {
+      border-color: #D1D5DB;
+    }
+
+    .rounded {
+      border-radius: 0.25rem;
+    }
+
+    .px-2 {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .py-1 {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    .bg-blue-500 {
+      background-color: #3B82F6;
+    }
+
+    .text-white {
+      color: #FFF;
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .bg-gray-300 {
+      background-color: #D1D5DB;
+    }
+
+    .text-gray-700 {
+      color: #4B5563;
+    }
+
+    .ml-2 {
+      margin-left: 0.5rem;
+    }
+
+    .accordion-title {
+      /* Styles for the accordion title */
+    }
+
+    .accordion-content {
+      /* Styles for the accordion content */
+    }
+  </style>
 </head>
+
 <body>
-  <div class="product-page">
-    <header>
-      <div class="logo">
-        <img src="image1.webp" alt="Graza Olive Oil">
+  <div class="container mx-auto">
+    <div class="flex flex-wrap">
+      <div class="w-full md:w-1/2">
+        <div class="carousel">
+          <!-- Carousel content goes here -->
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="product-hero">
-        <div class="product-image">
-          <img src="image2.webp" alt="Sizzle & Drizzle Combo Pack">
+      <div class="w-full md:w-1/2">
+        <h1 class="text-3xl font-bold mb-4">Sizzle Drizzle Combo Pack</h1>
+        <div class="flex items-center mb-4">
+          <label for="quantity" class="mr-2">Quantity:</label>
+          <select id="quantity" class="border border-gray-300 rounded px-2 py-1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Add more options as needed -->
+          </select>
         </div>
-
-        <div class="product-info">
-          <h1>Sizzle & Drizzle Combo Pack</h1>
-          <p>Enjoy the best of both worlds with Graza's “Drizzle & Sizzle” combo pack of extra-virgin olive oils.</p>
-
-          <div class="product-details">
-            <div class="product-quantity">
-              <label for="quantity">Quantity:</label>
-              <select id="quantity">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
+        <div class="mb-4">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded">Add to Cart</button>
+          <button class="bg-gray-300 text-gray-700 px-4 py-2 rounded ml-2">Buy Now</button>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <h3 class="accordion-title">Description</h3>
+            <div class="accordion-content">
+              <!-- Description content goes here -->
             </div>
-
-            <div class="product-price">
-              <span>$29.99</span>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-title">Harvest</h3>
+            <div class="accordion-content">
+              <!-- Harvest content goes here -->
             </div>
-
-            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-title">Use Case</h3>
+            <div class="accordion-content">
+              <!-- Use Case content goes here -->
+            </div>
           </div>
         </div>
-      </section>
-
-      <section class="product-description">
-        <h2>Description</h2>
-        <p>Graza's “Drizzle & Sizzle” combo pack is the perfect way to elevate your cooking and your taste buds. This duo includes our two most popular extra-virgin olive oils: “Drizzle” for finishing and “Sizzle” for cooking.</p>
-
-        <p>“Drizzle” is made from olives that are harvested early in the season, when they are still young and green. This gives the oil a spicy, peppery flavor that is perfect for drizzling over salads, vegetables, and pasta.</p>
-
-        <p>“Sizzle” is made from olives that are harvested later in the season, when they are more mature. This gives the oil a milder flavor that is perfect for cooking.</p>
-      </section>
-
-      <section class="product-recommendations">
-        <h2>You Might Also Like</h2>
-        <div class="product-card">
-          <img src="image3.webp" alt="Drizzle Olive Oil">
-          <div class="product-card-info">
-            <h3>Drizzle Olive Oil</h3>
-            <p>For finishing.</p>
-            <span class="price">$19.99</span>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-        </div>
-
-        <div class="product-card">
-          <img src="image4.jpg" alt="Sizzle Olive Oil">
-          <div class="product-card-info">
-            <h3>Sizzle Olive Oil</h3>
-            <p>For cooking.</p>
-            <span class="price">$24.99</span>
-            <a href="#" class="btn btn-primary">Add to Cart</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="social-media">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
       </div>
+    </div>
+  </div>
 
-      <div class="copyright">
-        &copy; 202
+  <script>
+    // Add any JavaScript code for carousel and accordion functionality here
+  </script>
+</body>
+
+</html>
