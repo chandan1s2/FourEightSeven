@@ -1,181 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Graza Olive Oil</title>
-<style>
-/* Style.css */
-
-body {
-  font-family: sans-serif;
-  background-color: #fff;
-}
-
-.product-page {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-header {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 40px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
-  color: #333;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #007bff;
-}
-
-.product-hero {
-  display: flex;
-  margin-top: 40px;
-}
-
-.product-image {
-  flex: 1;
-}
-
-.product-image img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.product-info {
-  flex: 1;
-  padding: 20px;
-  border: 1px solid #ddd;
-}
-
-.product-info h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.product-info p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.product-details {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.product-quantity {
-  flex: 1;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-select {
-  width: 100%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.product-price {
-  flex: 1;
-  text-align: right;
-}
-
-.product-price span {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #007bff;
-  color: #fff;
-}
-
-.btn:hover {
-  background-color: #0069d9;
-}
-
-.product-description {
-  margin-top: 40px;
-}
-
-.product-description h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.product-description p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
-
-footer .social-media {
-  margin-bottom: 20px;
-}
-
-footer .social-media a {
-  margin-right: 20px;
-}
-
-footer .social-media i {
-  font-size: 24px;
-  color: #333;
-}
-
-footer .social-media a:hover {
-  color: #007bff;
-}
-
-footer .copyright {
-  font-size: 14px;
-  color: #ccc;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graza Olive Oil</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <
+  <div class="product-page">
+    <header>
+      <div class="logo">
+        <img src="images/graza-logo.png" alt="Graza Olive Oil">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-hero">
+        <div class="product-image">
+          <img src="images/sizzle-drizzle-combo-pack.jpg" alt="Sizzle & Drizzle Combo Pack">
+        </div>
+
+        <div class="product-info">
+          <h1>Sizzle & Drizzle Combo Pack</h1>
+          <p>Enjoy the best of both worlds with Graza's “Drizzle & Sizzle” combo pack of extra-virgin olive oils.</p>
+
+          <div class="product-details">
+            <div class="product-quantity">
+              <label for="quantity">Quantity:</label>
+              <select id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+            <div class="product-price">
+              <span>$29.99</span>
+            </div>
+
+            <button class="btn btn-primary">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-description">
+        <h2>Description</h2>
+        <p>Graza's “Drizzle & Sizzle” combo pack is the perfect way to elevate your cooking and your taste buds. This duo includes our two most popular extra-virgin olive oils: “Drizzle” for finishing and “Sizzle” for cooking.</p>
+
+        <p>“Drizzle” is made from olives that are harvested early in the season, when they are still young and green. This gives the oil a spicy, peppery flavor that is perfect for drizzling over salads, vegetables, and pasta.</p>
+
+        <p>“Sizzle” is made from olives that are harvested later in the season, when they are more mature. This gives the oil a milder flavor that is perfect for cooking.</p>
+      </section>
+
+      <section class="product-recommendations">
+        <h2>You Might Also Like</h2>
+        <div class="product-card">
+          <img src="images/drizzle-olive-oil.jpg" alt="Drizzle Olive Oil">
+          <div class="product-card-info">
+            <h3>Drizzle Olive Oil</h3>
+            <p>For finishing.</p>
+            <span class="price">$19.99</span>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="images/sizzle-olive-oil.jpg" alt="Sizzle Olive Oil">
+          <div class="product-card-info">
+            <h3>Sizzle Olive Oil</h3>
+            <p>For cooking.</p>
+            <span class="price">$24.99</span>
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="social-media">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+
+      <div class="copyright">
+        &copy; 202
