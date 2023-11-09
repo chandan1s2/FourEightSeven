@@ -14,7 +14,13 @@
 }
 
 .carousel {
-  /* Styles for the carousel */
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel img{
+  width: 100%;
+  height: auto;
 }
 
 .quantity-selector {
